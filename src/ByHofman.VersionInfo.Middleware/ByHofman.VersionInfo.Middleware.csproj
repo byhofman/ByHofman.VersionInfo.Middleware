@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>ByHofman.VersionInfo.Middleware</PackageId>
+        <Authors>Thomas Hofman</Authors>
+        <Description>ASP.NET Core middleware that exposes application version information.</Description>
+        <PackageTags>aspnetcore;middleware;version</PackageTags>
+        <RepositoryUrl>https://github.com/byhofman/ByHofman.VersionInfo.Middleware</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/byhofman/ByHofman.VersionInfo.Middleware</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    </ItemGroup>
+
+</Project>
